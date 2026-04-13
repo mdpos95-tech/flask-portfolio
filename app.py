@@ -1,6 +1,8 @@
 # Flask Portfolio Web Application
 # This app displays multiple pages and uses dynamic data for projects
 
+from email.mime import message
+
 from flask import Flask, render_template, request
 app = Flask(__name__)
 
@@ -47,7 +49,7 @@ def contact():
         name = request.form.get('name')
         message = f"Thanks, {name}! Your message has been received."
         
-        return render_template('contact.html', title='Contact', message=message)
+    return render_template('contact.html', title='Contact', message=message)
 
 
 if __name__ == '__main__':
