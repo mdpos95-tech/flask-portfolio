@@ -77,7 +77,40 @@ p {
     line-height: 1.8;
 }
 
-.hero-buttons
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #111827;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.btn:hover {
+    background-color: #60a5fa;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #4b5563;
+}
+
+.btn-secondary:hover {
+    background-color: #60a5fa;
+    transform: translateY(-2px);
+}
+
 
 
 .project-card {
