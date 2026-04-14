@@ -5,6 +5,10 @@ body{
     background-color: #f3f4f6;
     color: #222;
     line-height: 1.6;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/static/images/bluey.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 nav {
@@ -28,12 +32,12 @@ nav a:hover {
 }
 
 main {
-    padding:30px;
-    margin: 60px auto;
-    max-width: 1000px;
+    padding:40px;
+    margin: 50px auto;
+    max-width: 1050px;
     background-color: white;
     border-radius: 14px;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2, h3{
