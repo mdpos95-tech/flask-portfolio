@@ -9,12 +9,23 @@ from flask import Flask, render_template, request
 load_dotenv()
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+
 # List of projects used to dynamically generate project and skill cards on the website
 
 projects_list = [
-    "Project 1: Football Team Fan Site",
-    "Project 2: Game of Thrones Quiz Site",
-    "Project 3: Flask Portfolio"
+    {
+     "title": "Manchester United Fan page", 
+     "description": "A fan page dedicated to Manchester United, showcasing news, player profiles and statistics, and match updates/results in a clean, responsive design.",
+     "tech": "HTML, CSS",
+     "category": "Web Development"},
+     
+    {"title": "Game of Thrones Quiz Site", "description": "An interactive quiz site based on the popular TV series Game of Thrones, testing users' knowledge of the show's characters, plot, and trivia.",
+     "tech": "HTML, CSS, JavaScript",
+     "category": "Web Development"},
+
+    {"title": "Flask Portfolio", "description": "A personal portfolio website built with Flask, showcasing projects, skills, and experience.",
+     "tech": "Python, Flask, JavaScript, HTML, CSS",
+     "category": "Web Development"},
 ]
 skills_list = [
     "Python",
