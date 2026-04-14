@@ -1,12 +1,28 @@
 {% extends "base.html" %}
 {% block content %}
+<section class="hero">
+
 <h1>Hi, I'm Mark</h1>
-<p>I am a software development student with a strong interest in Python and web development.
+
+<p class="hero-subtitle">
+    Software Development Student | Python & Web Developer
+</p>
+
+<p class="hero-text">I am a software development student with a strong interest in Python and web development.
     I enjoy learning new technologies and building interactive web applications using Flask, HTML and CSS.
     This portfolio website showcases some of my projects and skills. Feel free to explore and contact me if you have any
     questions or opportunities!
 </p>
 
+<div class="hero-buttons">
+<a href="{{ url_for('projects') }}"
+class="btn">View My Projects</a>
+<a href="{{ url}}"></a>
+
+
+</div>
+
+</section>
 <p>
     This portfolio website is built using Flask, a lightweight web framework for Python. It demonstrates my ability to
     create a simple yet functional web application, including routing, templates, and form handling. I have also
