@@ -17,11 +17,15 @@ projects_list = [
      "title": "Manchester United Fan page", 
      "description": "A fan page dedicated to Manchester United, showcasing news, player profiles and statistics, and match updates/results in a clean, responsive design.",
      "tech": "HTML, CSS",
-     "category": "Web Development"},
+     "category": "Web Development",
+     "live link": "https://mdpos95-tech.github.io/",
+     "github link": "https://github.com/mdpos95-tech/mdpos95-tech.github.io"},
      
     {"title": "Game of Thrones Quiz Site", "description": "An interactive quiz site based on the popular TV series Game of Thrones, testing users' knowledge of the show's characters, plot, and trivia.",
      "tech": "HTML, CSS, JavaScript",
-     "category": "Web Development"},
+     "category": "Web Development",
+     "live link": "https://mdpos95-tech.github.io/javascript-lab/",
+     "github link": "https://github.com/mdpos95-tech/javascript-lab"},
 
     {"title": "Flask Portfolio", "description": "A personal portfolio website built with Flask, showcasing projects, skills, and experience.",
      "tech": "Python, Flask, JavaScript, HTML, CSS",
