@@ -1,11 +1,14 @@
 # Flask Portfolio Web Application
 # This app displays multiple pages and uses dynamic data for projects
 
-from email.mime import message
+import os
+from dotenv import load_dotenv
+
 
 from flask import Flask, render_template, request
+load_dotenv()
 app = Flask(__name__)
-
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 # List of projects used to dynamically generate project and skill cards on the website
 
 projects_list = [
@@ -54,4 +57,4 @@ def contact():
 
 if __name__ == '__main__':
 
-    app.run(debug=True)
+    app.run(debug=os.getenv('DEBUG') == 'True')
