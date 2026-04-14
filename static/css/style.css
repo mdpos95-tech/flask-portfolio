@@ -128,3 +128,23 @@ ul{
     transform: translateY(-5px);
     transition: transform 0.3s ease;
 }
+
+.project-links {
+    margin-top: 15px;
+}
+
+.project-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    background-color: #333;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.project-links a:hover 
+{
+    background-color: #60a5fa;
+}
