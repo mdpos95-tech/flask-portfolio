@@ -1,9 +1,25 @@
 {% extends "base.html" %}`
 {% block content %}
 <h1>My Projects</h1>
+
+<p>
+    Below are some of the projects I have worked on during my software development journey. These projects demonstrate
+    my skills in Python, Flask, HTML, CSS, and JavaScript, and show my journey as a developer by implementing more
+    front-end features through each project, and now implementing back-end as well. Each project has its own unique
+    features and functionalities, showcasing my ability to create interactive web applications and solve real-world problems.
+</p>
+
 <ul>
     {% for project in projects %}
-        <li>{{ project }}</li>
+    <div class="project-card">
+        
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.description }}</p>
+        <p><strong>Technologies:</strong> {{ project.tech }}</p>
+        <p><strong>Category:</strong> {{ project.category }}</p>
+
+    </div>
+    <li>{{ project }}</li>
     {% endfor %}
 </ul>>
 {% endblock %}
