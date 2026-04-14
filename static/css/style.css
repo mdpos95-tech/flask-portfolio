@@ -58,6 +58,27 @@ p {
     color: #374151;
 }
 
+.hero {
+    text-align: center;
+    padding: 10px 10px 40px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #4b5563;
+    margin-bottom: 18px;
+}
+
+.hero-text {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+.hero-buttons
+
 
 .project-card {
     background-color: #f9f9f9;
