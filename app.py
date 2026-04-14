@@ -68,4 +68,6 @@ def contact():
 
 if __name__ == '__main__':
 
+    # Debug mode is controlled using environment variables for better security.
+
     app.run(debug=os.getenv('DEBUG') == 'True')
