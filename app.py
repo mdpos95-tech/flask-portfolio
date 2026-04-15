@@ -29,7 +29,7 @@ projects_list = [
 
     {"title": "Flask Portfolio", "description": "A personal portfolio website built with Flask, showcasing projects, skills, and experience.",
      "tech": "Python, Flask, JavaScript, HTML, CSS",
-     "category": "Web Development"},
+     "category": "Web Development"}, # When site goes live remember to add live and github links
 ]
 skills_list = [
     "Python",
@@ -39,6 +39,7 @@ skills_list = [
     "Javascript",
     "GitHub"
 ]
+
 
 # Flask routes are used to define the different pages of the website. Each route corresponds to a specific URL and renders a template with dynamic data passed as arguments.
 # Each @app.route decorator defines the URL path for the page.
