@@ -35,6 +35,30 @@ nav {
     background-color: #60a5fa;
 }
 
+.dark-mode {
+    background-color: #111827;
+    color: #f9fafb;
+}
+
+.dark-mode main {
+    background-color: #1f2937;
+}
+
+.dark-mode .project-card
+.dark-mode .highlight-card {
+    background-color: #374151;
+    border-color: #4b5563;
+    color: #f9fafb;
+}
+
+.dark-mode nav {
+    background-color: #000;
+}
+
+.dark-mode a {
+    color: #93c5fd;
+}
+
 nav a {
     color: white;
     text-decoration: none;
