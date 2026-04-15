@@ -53,6 +53,31 @@ faders.forEach(el => observer.observe(el));
 
          const searchInput = 
             document.getElementById('projectSearch');
+const filterButtons = 
+document.querySelectorAll('.filter-btn');
+const projectCards = 
+document.querySelectorAll('.project-card');
 
+let activeFilter = 'All';
+
+function filterProjects() {
+    const searchText = searchInput ? searchInput.value.toLowerCase() : '';
+
+    projectCards.forEach(card => {
+        const category = 
+        card.getAttribute('data-category');
+        const title = 
+        card.getAttribute('data-title').toLowerCase();
+        const description =
+        card.getAttribute('data-description').toLowerCase();
+
+        const tech = 
+        card.getAttribute('data-tech').toLowerCase();
+        const matchesFilter = activeFilter === 'All' || category === activeFilter;
+        const matchesSearch = title.includes(searchText) || description.includes(searchText) || tech.includes(searchText);
+
+        if (matchesFilter && matchesSearch) {
+            card.style.display = 'blo';
+        }
 
                
