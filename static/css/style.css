@@ -503,4 +503,7 @@ ul{
     background-color: #60a5fa;
     transform: scale(1.05);}
 
-    
+    .dark-mode .skill-tags span {
+    background-color: #374151;
+    color: #080808;
+    }
