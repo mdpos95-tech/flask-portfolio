@@ -507,3 +507,7 @@ ul{
     background-color: #a3b2cb;
     color: #080808;
     }
+
+    html{
+    scroll-behavior: smooth;
+    }
