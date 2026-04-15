@@ -49,6 +49,10 @@ nav {
     color: #e3e5e7;
 }
 
+.dark-mode .featured-project p {
+    color: #d1d5db;
+}
+
 .dark-mode main {
     background-color: #1f2937;
 }
