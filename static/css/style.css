@@ -471,3 +471,7 @@ ul{
     color: white;
     transform: scale(1.05);
   }      
+
+  .filter-btn:hover{
+    transform: scale(1.05);
+  }
