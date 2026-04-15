@@ -62,6 +62,7 @@ let activeFilter = 'All';
 
 function filterProjects() {
     const searchText = searchInput ? searchInput.value.toLowerCase() : '';
+    let visibleCount = 0;
 
     projectCards.forEach(card => {
         const category = 
@@ -79,10 +80,15 @@ function filterProjects() {
 
         if (matchesFilter && matchesSearch) {
             card.style.display = 'block';
+            visibleCount++;
         } else {
             card.style.display = 'none';
         }
     });
+    const noResults = document.getElementById('noResults');
+if (noResults) {
+    noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+}
 }
 
 if (searchInput) {
@@ -96,3 +102,6 @@ filterButtons.forEach(button => {
         filterProjects();
     });
 });        
+
+
+
