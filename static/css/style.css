@@ -50,9 +50,13 @@ nav {
 }
 
 .dark-mode .featured-project p {
-    color: #d1d5db;
+    color: #080808;
 }
 
+.dark-mode .project-card p 
+{
+    color: #080808;
+}
 .dark-mode main {
     background-color: #1f2937;
 }
