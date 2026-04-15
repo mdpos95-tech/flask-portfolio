@@ -465,3 +465,9 @@ ul{
     .dark-mode .filter-btn.active {
         background-color: #60a5fa;
         color: white;}
+
+  .filter-btn.active {
+    background-color: #60a5fa;
+    color: white;
+    transform: scale(1.05);
+  }      
