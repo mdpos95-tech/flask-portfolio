@@ -498,3 +498,9 @@ ul{
     transition: 0.2s;
 
     }
+
+    .skill-tags span:hover {
+    background-color: #60a5fa;
+    transform: scale(1.05);}
+
+    
