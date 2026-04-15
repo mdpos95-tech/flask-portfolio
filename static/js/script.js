@@ -77,7 +77,12 @@ function filterProjects() {
         const matchesSearch = title.includes(searchText) || description.includes(searchText) || tech.includes(searchText);
 
         if (matchesFilter && matchesSearch) {
-            card.style.display = 'blo';
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
         }
+    });
+}
+
 
                
