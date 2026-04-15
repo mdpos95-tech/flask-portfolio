@@ -40,6 +40,15 @@ nav {
     color: #f9fafb;
 }
 
+.dark-mode .hero h1{
+    color: #e3e5e7;
+}
+
+.dark-mode p,
+.dark-mode h1 {
+    color: #e3e5e7;
+}
+
 .dark-mode main {
     background-color: #1f2937;
 }
