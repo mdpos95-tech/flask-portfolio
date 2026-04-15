@@ -17,6 +17,22 @@ nav {
     display: flex;
     justify-content: center;
     gap: 24px;
+    align-items: center;
+}
+
+#darkModeToggle {
+    margin-left: 20px;
+    border: none;
+    color: white;
+    background-color: #374151;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+#darkModeToggle:hover {
+    background-color: #60a5fa;
 }
 
 nav a {
