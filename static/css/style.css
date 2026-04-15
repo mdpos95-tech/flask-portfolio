@@ -450,3 +450,18 @@ ul{
         flex-direction: column;
         gap: 10px;
     }} 
+
+    .dark-mode #projectSearch {
+        background-color: #374151;
+        border: 1px solid #4b5563;
+        color: #080808;
+    }
+
+    .dark-mode .filter-btn {
+        background-color: #374151;
+        color: #080808;
+    }
+
+    .dark-mode .filter-btn.active {
+        background-color: #60a5fa;
+        color: white;}
