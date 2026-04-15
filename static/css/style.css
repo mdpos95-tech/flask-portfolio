@@ -394,3 +394,20 @@ ul{
 .dark-mode .contact-page label {
     color: #080808;
 }
+
+.projects-controls {
+    margin: 25px 0 30px;
+    text-align: center;
+}
+
+#projectSearch {
+    width: 100%;
+    max-width: 420px;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+}
+
