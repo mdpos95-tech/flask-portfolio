@@ -49,3 +49,10 @@ faders.forEach(el => observer.observe(el));
          if (localStorage.getItem('theme') === 'dark') {
              document.body.classList.add('dark-mode');
          }
+
+
+         const searchInput = 
+            document.getElementById('projectSearch');
+
+
+               
