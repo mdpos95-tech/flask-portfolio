@@ -67,13 +67,14 @@ function filterProjects() {
         const category = 
         card.getAttribute('data-category');
         const title = 
-        card.getAttribute('data-title').toLowerCase();
+        (card.getAttribute('data-title') || '').toLowerCase();
         const description =
-        card.getAttribute('data-description').toLowerCase();
+        (card.getAttribute('data-description') || '').toLowerCase();
 
         const tech = 
-        card.getAttribute('data-tech').toLowerCase();
-        const matchesFilter = activeFilter === 'All' || category === activeFilter;
+        (card.getAttribute('data-tech') || '').toLowerCase();
+        const matchesFilter = activeFilter === 'All' || category === activeFilter || 
+        tech.includes(activeFilter.toLowerCase());
         const matchesSearch = title.includes(searchText) || description.includes(searchText) || tech.includes(searchText);
 
         if (matchesFilter && matchesSearch) {
