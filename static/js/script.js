@@ -84,5 +84,14 @@ function filterProjects() {
     });
 }
 
-
-               
+if (searchInput) {
+    searchInput.addEventListener('input', filterProjects);
+}
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        activeFilter = button.getAttribute('data-filter');
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        filterProjects();
+    });
+});        
