@@ -53,6 +53,7 @@ nav {
     color: #080808;
 }
 
+
 .dark-mode .project-card p 
 {
     color: #080808;
@@ -373,4 +374,23 @@ ul{
 .fade-in.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+.dark-mode .contact-page p{
+    color: #080808;
+}
+
+.dark-mode .contact-page {
+    color: #080808;
+}
+
+.dark-mode .contact-page input,
+.dark-mode .contact-page textarea {
+    background-color: #374151;
+    border: 1px solid #4b5563;
+    color: #080808;
+}
+
+.dark-mode .contact-page label {
+    color: #080808;
 }
