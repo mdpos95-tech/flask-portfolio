@@ -489,4 +489,12 @@ ul{
     margin-top: 10px;
     }
 
-    
+    .skill-tags span {
+    background-color: #e5e7eb;
+    color: #111827;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.2s;
+
+    }
