@@ -74,16 +74,28 @@ def contact():
         email = request.form.get('email')
         user_message = request.form.get('message')
 
-try:
-        msg = EmailMessage()
-        msg['Subject'] = f'Portfolio Contact Form Message from {name}'
-        msg['From'] = EMAIL_USER
-        msg['To'] = EMAIL_RECEIVER
-        msg['Reply-To'] = email 
+        try:
+            msg = EmailMessage()
+            msg['Subject'] = f'Portfolio Contact Form Message from {name}'
+            msg['From'] = EMAIL_USER
+            msg['To'] = EMAIL_RECEIVER
+            msg['Reply-To'] = email 
 
+            msg.set_content(
+                f"Name: {name}\n"
+                f"Email: {email}\n\n"
+                f"Message:\n{user_message}"
+            )
 
-        # Create the email message
-        message = f"Thanks, {name}! Your message has been received."
+            with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
+                smtp.starttls()
+                smtp.login(EMAIL_USER, EMAIL_PASS)
+                smtp.send_message(msg)
+
+            # Create the email message
+            message = f"Thanks, {name}! Your message has been received."
+        except Exception as e:
+            message = "An error occurred while sending the message. Please try again."
         
     return render_template('contact.html', title='Contact', message=message)
 
