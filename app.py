@@ -2,6 +2,8 @@
 # This app displays multiple pages and uses dynamic data for projects
 
 import os
+import smtplib
+from email.message import EmailMessage
 from dotenv import load_dotenv
 
 
