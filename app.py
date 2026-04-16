@@ -8,9 +8,16 @@ from dotenv import load_dotenv
 
 
 from flask import Flask, render_template, request
+
+# Load environment variables from .env file for sensitive information like email credentials and secret keys.
+# Keeps passwords and keys out of the codebase for better security and allows for easy configuration across different environments.
+
 load_dotenv()
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+
+# Email settings used by contact form SMTP system for security reasons.
+
 EMAIL_USER = os.getenv('EMAIL_USER')
 EMAIL_PASS = os.getenv('EMAIL_PASS')
 EMAIL_RECEIVER = os.getenv('EMAIL_RECEIVER')
@@ -36,6 +43,9 @@ projects_list = [
      "tech": "Python, Flask, JavaScript, HTML, CSS",
      "category": "Web Development"}, # When site goes live remember to add live and github links
 ]
+
+# List of skills used to dynamically generate skill cards on the website.
+
 skills_list = [
     "Python",
     "Flask",
@@ -66,13 +76,20 @@ def skills():
 def about():
     return render_template('about.html', title='About')
 
+# Contact page handles form display and message sending.
+
 @app.route("/contact", methods=['GET', 'POST'])
 def contact():
     message = ""
+
+#Process submitted contact form data.
+
     if request.method == 'POST':
         name = request.form.get('name')
         email = request.form.get('email')
         user_message = request.form.get('message')
+
+#Built email message using visitor form input.
 
         try:
             msg = EmailMessage()
@@ -86,6 +103,8 @@ def contact():
                 f"Email: {email}\n\n"
                 f"Message:\n{user_message}"
             )
+
+# Securely connect to Gmail SMTP server and send message using credentials stored in environment variables.
 
             with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
                 smtp.starttls()
