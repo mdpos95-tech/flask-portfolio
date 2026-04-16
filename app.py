@@ -71,6 +71,18 @@ def contact():
     message = ""
     if request.method == 'POST':
         name = request.form.get('name')
+        email = request.form.get('email')
+        user_message = request.form.get('message')
+
+try:
+        msg = EmailMessage()
+        msg['Subject'] = f'Portfolio Contact Form Message from {name}'
+        msg['From'] = EMAIL_USER
+        msg['To'] = EMAIL_RECEIVER
+        msg['Reply-To'] = email 
+
+
+        # Create the email message
         message = f"Thanks, {name}! Your message has been received."
         
     return render_template('contact.html', title='Contact', message=message)
