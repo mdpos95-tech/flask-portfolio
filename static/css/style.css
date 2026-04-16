@@ -523,3 +523,11 @@ ul{
     footer p{
         color: white;
     }
+
+    .direct-email{
+        margin-bottom: 20px;
+    }
+
+    .direct-email a{
+        font-weight: 600;
+    }
