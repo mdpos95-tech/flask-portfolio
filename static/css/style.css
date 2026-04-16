@@ -525,9 +525,20 @@ ul{
     }
 
     .direct-email{
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 1rem;
     }
 
     .direct-email a{
         font-weight: 600;
+        text-decoration: none;
+    }
+
+    .direct-email a:hover{
+        text-decoration: underline;
+    }
+
+    body.dark-mode .direct-email{
+        color: #f9fafb
     }
