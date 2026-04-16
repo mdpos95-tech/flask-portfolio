@@ -11,6 +11,9 @@ from flask import Flask, render_template, request
 load_dotenv()
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+EMAIL_USER = os.getenv('EMAIL_USER')
+EMAIL_PASS = os.getenv('EMAIL_PASS')
+EMAIL_RECEIVER = os.getenv('EMAIL_RECEIVER')
 
 # List of projects used to dynamically generate project and skill cards on the website
 
