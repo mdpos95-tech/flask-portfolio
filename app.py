@@ -41,7 +41,10 @@ projects_list = [
 
     {"title": "Flask Portfolio", "description": "A personal portfolio website built with Flask, showcasing projects, skills, and experience.",
      "tech": "Python, Flask, JavaScript, HTML, CSS",
-     "category": "Web Development"}, # When site goes live remember to add live and github links
+     "category": "Web Development",
+     "live": "https://flask-portfolio-gncf.onrender.com/",
+     "github": "https://github.com/mdpos95-tech/flask-portfolio"
+     },
 ]
 
 # List of skills used to dynamically generate skill cards on the website.
